@@ -1,0 +1,141 @@
+.choose{
+    min-height: 900px;
+    padding: 76px 100px;
+    @media screen and (max-width: 1023px){
+        padding: 76px 30px;
+    }
+    &-top, &-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    &-left{
+        &--text{
+            font-style: italic;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #7D7D7D;
+        }
+        &--title{
+            font-family: 'Abhaya Libre ExtraBold';
+            font-weight: 800;
+            font-size: 46px;
+            line-height: 50px;
+            color: #222222;
+        }
+    }
+    &-right{
+        justify-content: center;
+        gap: 30px;
+        @media screen and (max-width: 767px){
+            padding-top: 20px
+        }
+        &--title{
+            width: 70%;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #494949;
+            padding-bottom: 20px;
+        }
+        &--text{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            color: #242424;
+        }
+    }
+    &-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding-top: 93px;
+        gap: 40px;
+        @media screen and (max-width: 767px){
+            padding-top: 60px;
+        }
+        &--img{
+            width: 50%;
+            z-index: 0;
+            position: relative;
+            background: url(../../images/shapes/img_shape_use-1.png) no-repeat 350px 100px , url(../../images/shapes/img_shape_use-2.png) no-repeat 100px 220px;
+            display: block;
+            margin: 0 auto;
+            
+            // min-height: 500px;
+            @media screen and (max-width: 767px){
+                width: 70%;
+            }
+        }
+        &--imgTop{
+
+            z-index: 1;
+        }
+        &--imgTop, &--imgBottom{
+            display: block;
+            margin: 0 auto;
+        }
+        &--imgBottom{
+            position: absolute;
+            top: 35%;
+            right: 12.5%;
+            z-index: 2;
+            // background: url(../../images/shapes/img_shape_use-2.png) no-repeat -10px 30px;
+        }
+        &--content{
+            width: 40%;
+            @media screen and (max-width: 767px)
+            {
+                width: unset;
+                margin-top: 70px
+            }
+        }
+        &--title{
+            font-family: 'Abhaya Libre ExtraBold';
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 30px;
+            color: #1B1B1B;
+            padding-bottom: 25px;
+        }
+        &--desc{
+            display: flex;
+            flex-flow: column wrap;
+            gap: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #646464;
+        }
+        &--btn{
+            padding-top:18px;
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            flex-flow: row nowrap;
+            gap: 20px;
+            color: #F93801;
+        }
+        &--arrow{
+            width: 40px;
+            display: inline-block;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #F93801;
+            border-right: 1px solid transparent;
+            border-top: 1px solid transparent;
+            // border-bottom: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            // border-bottom: 10px solid white;
+            span{
+                transform: rotate(315deg) !important;
+            }
+        }
+    }
+}

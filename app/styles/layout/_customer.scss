@@ -1,0 +1,97 @@
+.customer{
+    min-height: 800px;
+    @media screen and (max-width: 767px){
+        padding: 0 20px
+    }
+    &-slider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow:row wrap ;
+        
+    }
+    &-img{
+        // height: 100%;
+        // width: 50%;
+        position: relative;
+        
+    }
+    &-box{
+        background: #F2EDFF;
+            border-radius: 20px 1000px 20px 20px;
+            bottom: 0;
+            width: 100%;
+            position: absolute;
+            height: 90%;
+            z-index: -100000000000;
+    }
+    &-content{
+        width: 35%;
+        margin-left: 146px;
+        @media screen and (max-width: 1023px){
+            margin: 20px 50px 0 50px;
+            width: unset;
+        }
+        @media screen and (max-width: 767px){
+            margin: 20px 0 0 0;
+        }
+        &--story{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #8A60FF;
+        }
+        &--title{
+            font-family: 'Abhaya Libre ExtraBold';
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 56px;
+            color: #000000;
+            padding-bottom: 24px
+        }
+        &--desc{
+            width: 75%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: #4F6B7D;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 10px;
+            @media screen and (max-width: 767px){
+                width: unset;
+            }
+        }
+        &--name{
+            padding-top: 60px;
+            font-family: 'Abhaya Libre ExtraBold';
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+        }
+        &--job{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #4F6B7D;
+        }
+        &--listDot{
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 5px
+        }
+        &--dot{
+            cursor: pointer;
+            width: 10px;
+            height: 10px;
+            background: #8A60FF;
+            border-radius: 50%;
+            opacity: 0.5;
+            &.active{
+                opacity: 1 ;
+            }
+        }
+    }
+}

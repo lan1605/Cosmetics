@@ -1,0 +1,36 @@
+.brand{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    &-title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #C8CED8;
+    }
+    &-list{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        // display: flex;
+	// width: 750px;
+	margin: 0 auto;
+	overflow: hidden;
+        gap: 100px;
+        @media screen and (max-width: 1023px){
+            gap: 20px;
+        }
+        @media screen and (max-width: 767px){
+            justify-content: flex-start;
+            overflow: auto;
+        }
+    }
+
+    
+}

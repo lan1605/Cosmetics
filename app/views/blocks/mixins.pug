@@ -1,0 +1,15 @@
+mixin footerItem(title, link1, link2, link3, link4, link5)
+    .footer-menu--title=title 
+    a.footer-menu--link(href="")=link1
+    a.footer-menu--link(href="")=link2
+    a.footer-menu--link(href="")=link3 
+    a.footer-menu--link(href="")=link4 
+    a.footer-menu--link(href="")=link5
+mixin questionItem(classActive="",imgActive,img,minus, plus, title, desc, classContentActive="")
+    .questions-accordion(class=classActive)
+        .questions-accordion--top
+            .questions-accordion--btn 
+                img(src=img, alt="").questions-img(class=plus)
+                img(src=imgActive, alt="").questions-img(class=minus).active
+            .questions-accordion--title=title
+        .questions-accordion--content(class=classContentActive)=desc

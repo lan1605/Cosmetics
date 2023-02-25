@@ -1,0 +1,91 @@
+.product{
+    min-height: 1000px;
+    padding-top: 80px;
+    color: #292019;
+    &-top{
+        text-align: center;
+        &--title{
+            font-family: 'Abhaya Libre ExtraBold';
+        
+            font-weight: 800;
+            font-size: 60px;
+            line-height: 76px;
+            letter-spacing: -0.05em;
+        }
+        &--desc{
+            margin: 0 auto;
+            // font-family: 'Poppins', sans-serif;
+        
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #72696A;
+            width: 55%;
+            padding-bottom: 60px;
+            @media screen and (max-width: 767px){
+                width: unset;
+                margin: 0 20px
+            }
+        }
+    }
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        // gap: 126px;
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+        }
+    }
+    &-middle :where(&-img){
+        width: 30%;
+        background: url(../../images/shapes/img_shape_gos.png) no-repeat center;
+        background-position-y: 120px;
+        @media screen and (max-width: 767px){
+            width: unset;
+        }
+    }
+    &-bottom :where(&-img){
+        background: url(../../images/shapes/img_hd_micro.png) no-repeat center;
+    }
+    &-content{
+        width: 30%;
+        @media screen and (max-width: 1023px) {
+            width: 50% !important;
+            padding-left: 20px;
+        }
+        @media screen and (max-width: 767px){
+            width: unset !important;
+            padding: 0 20px
+        }
+        &--title{
+            font-family: 'Abhaya Libre ExtraBold';
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 60px;
+            color: #2C3538;
+            margin-bottom:25px;
+        }
+        &--desc{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #72696A;
+            width: 80%;
+            @media screen and (max-width: 1023px){
+                width: unset;
+            }
+        }
+    }
+    &-bottom :where(&-content--desc){
+        padding-bottom: 20px
+    }
+    &-bottom :where(&-content){
+        width: 34%;
+        @media screen and (max-width: 767px){
+            order: 2
+        }
+    }
+}
