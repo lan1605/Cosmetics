@@ -13,13 +13,15 @@
         border-bottom:  1px solid #EDEBE8;
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 132px;
         flex-flow: row wrap;
         padding-bottom: 60px;
+        @media screen and (max-width: 1088px){
+            gap: 95px;
+        }
         @media screen and (max-width: 767px){
             gap: 100px;
-            justify-content: flex-start;
         }
     }
     &-desc{

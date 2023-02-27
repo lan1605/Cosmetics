@@ -58,6 +58,9 @@
             display: flex;
             flex-flow: column nowrap;
             gap: 10px;
+            @media screen and (max-width: 1088px){
+                width: 90%;
+            }
             @media screen and (max-width: 767px){
                 width: unset;
             }
@@ -88,7 +91,7 @@
             height: 10px;
             background: #8A60FF;
             border-radius: 50%;
-            opacity: 0.5;
+            opacity: 0.3;
             &.active{
                 opacity: 1 ;
             }

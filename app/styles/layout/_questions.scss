@@ -45,7 +45,7 @@
         box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
         border-radius: 10px;
         margin-bottom: 30px;
-        @media screen and (max-width: 767px){
+        @media screen and (max-width: 1088px){
             padding: 35px 20px 33px 20px;
         }
     }
@@ -59,6 +59,9 @@
             gap: 30px;
             align-items: center;
             // justify-content: center;
+            @media screen and (max-width: 1024px){
+                gap: 20px
+            }
             @media screen and (max-width: 767px){
                 gap: 10px;
             }
@@ -69,6 +72,12 @@
             line-height: 130%;
             color: #1B1139;
             opacity: 0.88;
+            @media screen and (max-width: 1088px){
+                font-size: 16px;
+            }
+            @media screen and (max-width: 1024px){
+                font-size: 15px;
+            }
             @media screen and (max-width: 767px){
                 font-size: 14px;
             }
@@ -92,6 +101,9 @@
             opacity: 0.7;
             display: block;
             padding: 30px 60px 0px 60px;
+            @media screen and (max-width: 1024px){
+                padding: 20px 50px 0 50px 
+            }
             @media screen and (max-width: 767px){
                 font-size: 12px;
                 padding: 10px 20px 0px 20px;

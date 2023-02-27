@@ -46,9 +46,6 @@
             width: unset;
         }
     }
-    &-bottom :where(&-img){
-        background: url(../../images/shapes/img_hd_micro.png) no-repeat center;
-    }
     &-content{
         width: 30%;
         @media screen and (max-width: 1023px) {
@@ -74,7 +71,7 @@
             line-height: 28px;
             color: #72696A;
             width: 80%;
-            @media screen and (max-width: 1023px){
+            @media screen and (max-width: 1088px){
                 width: unset;
             }
         }
