@@ -109,6 +109,11 @@ body {
     width: 70%;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-container-img {
+    width: unset;
+  }
+}
 .header-container-left {
   width: 35%;
 }
