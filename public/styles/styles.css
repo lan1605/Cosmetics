@@ -263,7 +263,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header-container-work {
-    gap: 10px;
+    gap: 0px;
   }
 }
 .header-container-work:hover .header-container-circle::before {
@@ -277,13 +277,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header-container-cart, .header-container-work span {
+    padding: 18px 15px;
     font-size: 12px;
     line-height: 10px;
-  }
-}
-@media screen and (max-width: 361px) {
-  .header-container-cart, .header-container-work span {
-    padding: 18px 10px 18px 10px;
   }
 }
 .header-container-circle {
@@ -303,6 +299,19 @@ body {
   right: 20px;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  .header-container-circle::before {
+    width: 8px;
+    height: 8px;
+    top: 13px;
+    right: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container-circle {
+    padding: 10px;
+  }
+}
 .header-container-play {
   color: white;
   background: linear-gradient(180deg, #B91122 0%, #D65B66 100%), #FFFFFF;
@@ -315,6 +324,13 @@ body {
   justify-content: center;
   border-radius: 50%;
   z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .header-container-play {
+    font-size: 8px;
+    width: 15px;
+    height: 15px;
+  }
 }
 .header-container-details {
   width: 100%;
@@ -428,6 +444,16 @@ body {
   }
   to {
     transform: rotate(360deg) translateX(25px) rotate(-360deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  @keyframes animateCircle {
+    from {
+      transform: rotate(0deg) translateX(20px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
   }
 }
 .btn-scroll-top {
